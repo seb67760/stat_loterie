@@ -221,7 +221,7 @@ if page == pages[1] :
     
     data['montant €'] = data['montant'].map("{:,.0f}".format)
     
-    st.write("Palmarès de ces boules")
+    st.write("Palmarès de ces numéros")
 
     count_result = pd.DataFrame(data['resultat'].value_counts().reset_index(name= 'comptage'))
 
@@ -251,9 +251,8 @@ if page == pages[1] :
 
     st.write("Le calcul du coût est de 2.20€ par grille et le calcul des gains est fait avec ce tableau")
 
-    file_image = r'resultat.jpg'
+    file_image = r'resultat.JPG'
     st.image(file_image, caption= "Grille résultat")
-
 
    
 
